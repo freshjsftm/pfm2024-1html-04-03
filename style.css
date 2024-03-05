@@ -1,12 +1,24 @@
 /* *{
   font-size: 16px;
 } */
-body{
-  background-color:beige;
+body {
+  background-color: beige;
 }
-.center{
+.center {
   text-align: center;
 }
-.alert-color{
+.alert-color {
   color: red;
+}
+.wavy-decorate {
+  text-decoration: underline wavy darkmagenta 3px;
+  /* text-decoration-line: line-through;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    text-decoration-thickness: 1px; */
+}
+.article-heading {
+  color: rgb(210, 105, 30);
+  text-align: center;
+  text-transform: capitalize;
 }
