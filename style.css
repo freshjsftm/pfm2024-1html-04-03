@@ -12,6 +12,22 @@ body {
 a {
   color: inherit;
 }
+/* div{
+  display: inline-block;
+  background-color: darkcyan;
+} */
+strong,
+em,
+div{
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  margin: 1.5em;
+  background-color: aquamarine;
+  border: inherit;
+  border-color: blue;
+  border-bottom-width: 5px;
+  /* line-height: 13; */
+}
 .main-article {
   width: 80%;
   padding: 10px;
@@ -26,7 +42,7 @@ a {
   text-align: center;
 
   font-size: 1.5em;
-  font-style: italic;
+  /* font-style: italic; */
 }
 .main-article-heading {
   width: 50%;
