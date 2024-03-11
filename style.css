@@ -1,22 +1,18 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-}
-/* html,
-body{
-  height: 100%;
-  margin: 0;
-} */
-
-.parent{
+img{
   width: 100%;
-  height: 100vh;
-  background-color: yellow;
 }
-
-.child{
-  width: 100vmin;
-  height:  100vmin;
-  /* padding: 10%; */
-  background-color: pink;
+table {
+  width: 80%;
+  margin: auto;
+  /* border: 1px solid red; */
+  border-collapse: collapse;
+  /* border-collapse: separate;
+  border-spacing: 1px; */
+}
+th,
+td {
+  border: 1px solid blue;
+}
+.heading-row{
+  width: 50%;
 }
