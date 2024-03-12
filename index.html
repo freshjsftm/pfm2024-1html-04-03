@@ -8,39 +8,45 @@
   </head>
   <body>
     <table>
-      <caption>caption - table title</caption>
+      <caption>
+        caption - table title
+      </caption>
       <thead>
         <tr>
-          <th>title of col 1</th>
-          <th>title of col 2</th>
-          <th>title of col 3</th>
-          <th>title of col 4</th>
+          <th colspan="2">title of col 1</th>
+          <th colspan="2">title of col 2</th>
+          <!-- <th>title of col 3</th> -->
+          <!-- <th>title of col 4</th> -->
+        </tr>
+        <tr>
+          <th>subheading</th>
+          <th>subheading</th>
+          <th>subheading</th>
+          <th>subheading</th>
         </tr>
       </thead>
       <tbody>
         <!-- tr*4>th{title of row $}+td*3{text of cell} -->
         <tr>
-          <th class="heading-row">title of row 1 class heading-row</th>
+          <th>title of row 1</th>
+          <td colspan="2" rowspan="3">text of cell</td>
           <td>text of cell</td>
-          <td>text of cell</td>
+          <!-- <td>text of cell</td> -->
+        </tr>
+        <tr>
+          <th rowspan="3">title of row 2</th>
+          <!-- <td>text of cell</td> -->
+          <!-- <td>text of cell</td> -->
           <td>text of cell</td>
         </tr>
         <tr>
-          <th>title of row 2</th>
-          <td>text of cell</td>
-          <td>text of cell</td>
-          <td>text of cell</td>
-        </tr>
-        <tr>
-          <th>title of row 3</th>
-          <td>text of cell 
-            <img src="./assets/images/sea.1.2496908.jpg" alt="sea">
-          </td>
-          <td>text of cell</td>
+          <!-- <th>title of row 3</th> -->
+          <!-- <td>text of cell</td> -->
+          <!-- <td>text of cell</td> -->
           <td>text of cell</td>
         </tr>
         <tr>
-          <th>title of row 4</th>
+          <!-- <th>title of row 4</th> -->
           <td>text of cell</td>
           <td>text of cell</td>
           <td>text of cell</td>
@@ -50,9 +56,9 @@
         <!-- tr>th*4{text} -->
         <tr>
           <th>total in foot</th>
-          <th>total in foot</th>
-          <th>total in foot</th>
-          <th>total in foot</th>
+          <th colspan="3">total in foot</th>
+          <!-- <th>total in foot</th>
+          <th>total in foot</th> -->
         </tr>
       </tfoot>
     </table>
