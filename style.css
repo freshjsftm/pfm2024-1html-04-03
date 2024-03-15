@@ -1,155 +1,69 @@
-/* * - universal selector */
 * {
   box-sizing: border-box;
-  /* padding: 0;
-  margin: 0; */
 }
 
-/* <name_tag> - tags selector */
 body {
+  /* height: 300vh; */
   margin: 0;
 }
-img {
-  width: 100%;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: serif;
-}
 
-/*  #<name_id> - selector id */
-#uniq {
-  font-family: monospace;
-}
-
-/* .<name_class>  -   selector class */
-.heading-cell {
-  width: 300px;
-  /* height: 100px; */
-}
-.one-line {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.heading-cell.one-line {
-  color: red;
-}
-.link,
-.btn {
-  cursor: pointer;
-}
-
-/* selector1 selector2 -     space -  selector context */
-#uniq td {
-  background-color: pink;
-}
-#uniq td,
-#uniq th {
-  padding: 10px;
-}
-#uniq .heading-cell {
-  background-color: salmon;
-}
-.list li li {
-  border: 1px solid blue;
-}
-
-/* selector1>selector2 -     > -  selector childern */
-.list > li {
-  display: inline-block;
-  border: 1px solid red;
-}
-
-/* selector1+selector2 -     + -  selector sibling */
-th + th {
-  color: gold;
-  font-size: 1.2em;
-}
-
-/* selector1~selector2 -     ~ -  selector родичів */
-th ~ td {
-  color: forestgreen;
-}
-p ~ blockquote {
-  background-color: blueviolet;
-}
-
-blockquote + div > blockquote {
-  background-color: magenta;
-}
-
-#example > p {
-  color: red;
-}
-
-#example p {
-  color: green;
-}
-
-/*   pseudoclasses */
-
-:root {
-  /* html */
-  font-size: 14px;
-  /*оголошення глобальних змінних*/
-}
-
-div > blockquote:hover {
-  background-color: darkblue;
-  color: fuchsia;
-}
-
-.blq:hover {
+.wrapper {
+  width: 80%;
+  height: 80%;
+  margin: auto;
   background-color: yellow;
+  position: relative;
 }
 
-/* ul li:hover a{
-  text-decoration: underline;
-  font-size: 5em;
-  cursor: pointer;
+.child{
+  width: 80px;
+  height: 80px;
+  border: 1px solid #000;
+  background-color: aqua;
 }
 
-li:hover a{
-  text-decoration: line-through;
-  font-size: 2em;
-  cursor: pointer;
-} */
-
-/* LVHA */
-
-a:link{
-  text-decoration: underline;
-}
-
-a:visited{
-  color: red;
-}
-
-a:hover{
-  background-color: #ccc;
-}
-
-a:focus{
-  background-color: fuchsia;
-}
-
-a:active{
+.parent {
+  width: 80%;
+  height: 50%;
   background-color: pink;
+  position: relative;
+  top: 100px;
 }
 
-*:focus{
-  background-color:aqua;
-  outline: 2px dotted red;
+.absolute{
+  /* width: 50%;
+  height: 120%; */
+  width: 80px;
+  height: 80px;
+  background-color: fuchsia;
+  
+  position: absolute;
+
+  bottom: -10px;
+  right: 0; 
+  left: 30%;
+  top: -30px; 
 }
 
-*:target{
-  margin-left: 30%;
+
+
+.static{
+  position: static;
+}
+
+.relative{
+  position: relative;
+  /* bottom: -20px; */
+  top: 10px;
+  left: 100%; 
+  z-index: 10;
+}
+
+.fixed{
+  border-radius: 50%;
+  text-align: center;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
 }
