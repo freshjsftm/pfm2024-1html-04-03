@@ -1,30 +1,95 @@
-p {
-  color: blue;
-  font-size: 2em;
+* {
+  box-sizing: border-box;
 }
-h1 {
-  width: 50%;
-  margin: auto;
-  background-color: cornflowerblue;
 
-  position: relative;
+body {
+  margin: 0;
+}
 
+.menu,
+.menu ul{
+  padding: 0;
+  list-style: none;
+}
+.menu {
   text-align: center;
 }
-
-h1::before {
-  content: url(./assets/icons/arrow-u-right-top-bold.svg);
+.menu li ul {
+  display: none;
+}
+.menu li:hover{
+  background-color: fuchsia;
+}
+.menu li:hover > ul {
+  display: block;
+}
+.menu li ul {
+  width: 150%;
+  position: absolute;
+  z-index: 10;
+}
+.menu ul ul{
+  top: 0;
+  left: 100%;
+}
+.menu-item {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  background-color: gainsboro;
+  position: relative;
+}
+.menu-item li{
+  background-color: pink;
+  position: relative;
+}
+.menu-link,
+.submenu-link {
+  display: inline-block;
+  padding: 1em 0.8em;
+}
 
-  background-color: aqua;
+.card {
+  width: 50vmin;
+  height: 50vmin;
+  padding: 10px;
+  margin: 5vmin auto 0;
+
+  border: 1px solid #ccc;
+
+  background-color: white;
+
+  position: relative;
+}
+
+.card::before,
+.card::after {
+  content: '';
+  display: block;
+  border: 1px solid #ccc;
 
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
-h1::after {
-  content: '\1F60D';
-  display: inline-block;
+
+.card::before {
+  background-color: wheat;
+  z-index: -1;
+  transform: rotate(2deg) translateX(-5px);
+}
+
+.card:nth-child(3n + 1)::before {
+  background-color: pink;
+}
+
+.card::after {
+  background-color: lightcyan;
+  z-index: -2;
+  transform: rotate(-2deg);
+}
+
+.card-title {
+}
+.card-content {
 }
