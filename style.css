@@ -1,21 +1,30 @@
-p{
+p {
   color: blue;
   font-size: 2em;
 }
+h1 {
+  width: 50%;
+  margin: auto;
+  background-color: cornflowerblue;
 
-p::first-letter{
+  position: relative;
+
+  text-align: center;
+}
+
+h1::before {
+  content: url(./assets/icons/arrow-u-right-top-bold.svg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+
   background-color: aqua;
-  color: red;
-  font-size: 3em;
-}
 
-p::first-line{
-  background-color: yellow;
-  text-shadow: 11px 0px 3px rgba(0,0,0,0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-
-p::selection{
-  color: pink;
-  background-color: red;
-  text-shadow: 0px 11px 3px rgba(0,0,0,0.6);
+h1::after {
+  content: '\1F60D';
+  display: inline-block;
 }
