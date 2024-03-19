@@ -1,95 +1,25 @@
-* {
+*{
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
+.container{
+  height: 60vh;
+  border: 2px solid #aaa;
+  background-color: #eee;
 }
 
-.menu,
-.menu ul{
-  padding: 0;
-  list-style: none;
-}
-.menu {
+.item{
+  width: 50px;
+  height: 50px;
+  border: 2px solid #4ff;
+  background-color: #e50;
+  font-size: 2em;
   text-align: center;
 }
-.menu li ul {
-  display: none;
-}
-.menu li:hover{
-  background-color: fuchsia;
-}
-.menu li:hover > ul {
-  display: block;
-}
-.menu li ul {
-  width: 150%;
-  position: absolute;
-  z-index: 10;
-}
-.menu ul ul{
-  top: 0;
-  left: 100%;
-}
-.menu-item {
-  display: inline-block;
-  background-color: gainsboro;
-  position: relative;
-}
-.menu-item li{
-  background-color: pink;
-  position: relative;
-}
-.menu-link,
-.submenu-link {
-  display: inline-block;
-  padding: 1em 0.8em;
-}
 
-.card {
-  width: 50vmin;
-  height: 50vmin;
-  padding: 10px;
-  margin: 5vmin auto 0;
-
-  border: 1px solid #ccc;
-
-  background-color: white;
-
-  position: relative;
-}
-
-.card::before,
-.card::after {
-  content: '';
-  display: block;
-  border: 1px solid #ccc;
-
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.card::before {
-  background-color: wheat;
-  z-index: -1;
-  transform: rotate(2deg) translateX(-5px);
-}
-
-.card:nth-child(3n + 1)::before {
-  background-color: pink;
-}
-
-.card::after {
-  background-color: lightcyan;
-  z-index: -2;
-  transform: rotate(-2deg);
-}
-
-.card-title {
-}
-.card-content {
+.flex-parent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /*main axis*/
+  align-items: stretch; /*cross axis*/
 }
