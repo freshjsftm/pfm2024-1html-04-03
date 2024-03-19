@@ -9,8 +9,8 @@
 }
 
 .item{
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
   border: 2px solid #4ff;
   background-color: #e50;
   font-size: 2em;
@@ -20,6 +20,15 @@
 .flex-parent{
   display: flex;
   flex-direction: row;
-  justify-content: space-between; /*main axis*/
+  /* justify-content: space-between;  */
+  /*main axis*/
   align-items: stretch; /*cross axis*/
+}
+
+.margin-right-auto{
+  margin-right: auto;
+}
+
+.margin-top-auto{
+  margin-top: auto;
 }
