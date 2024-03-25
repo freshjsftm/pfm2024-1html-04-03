@@ -8,36 +8,61 @@
   </head>
   <body>
     <form class="form" action="">
-      <label>
-        <span>login</span>
-        <input
-          type="text"
-          name="login"
-          placeholder="only small letter"
-          autofocus
-          required
-        />
-      </label>
-      <label>
-        <span>password</span>
-        <input 
-        type="password" 
-        name="password" 
-        required 
-        />
-      </label>
-      <label>
-        <span>email</span>
-        <input
-          type="email"
-          name="email"
-          required
-          pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
-        />
-      </label>
+      <fieldset>
+        <legend>self info</legend>
+        <label>
+          <span>login</span>
+          <input
+            type="text"
+            name="login"
+            placeholder="only small letter"
+            autofocus
+          />
+        </label>
+        <label>
+          <span>password</span>
+          <input type="password" name="password" />
+        </label>
+        <label>
+          <span>email</span>
+          <input type="email" name="email" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>choose sex</legend>
+        <label>
+          <span>male</span>
+          <input type="radio" name="sex" value="male" checked/>
+        </label>
+        <label>
+          <span>female</span>
+          <input type="radio"  name="sex" value="female" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>choose language</legend>
+        <label>
+          <span>php</span>
+          <input type="checkbox" name="language" value="php"/>
+        </label>
+        <label>
+          <span>js</span>
+          <input type="checkbox"  name="language" value="js" checked/>
+        </label>
+        <label>
+          <span>html</span>
+          <input type="checkbox"  name="language" value="html" checked/>
+        </label>
+        <label>
+          <span>css</span>
+          <input type="checkbox"  name="language" value="css" checked/>
+        </label>
+      </fieldset>
       <p>* - required field</p>
+      <!-- <input type="reset" value="reset" /> -->
       <input type="submit" value="send" />
+      <input type="button" value="name button" />
+      <button type="reset">name button reset</button>
     </form>
   </body>
 </html>
-

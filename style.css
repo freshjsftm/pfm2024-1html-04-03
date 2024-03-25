@@ -1,41 +1,42 @@
-*{
+* {
   box-sizing: border-box;
 }
-.form{
-  display: flex ;
+.form,
+.form fieldset {
+  display: flex;
   flex-direction: column;
-
+}
+.form {
   max-width: 350px;
   margin: 20px auto;
-
-  /* gap: 10px; */
 }
-.form>*:not(:last-child){
+
+.form *:not(:last-child) {
   margin-bottom: 10px;
 }
-.form>label{
-  display: flex ;
+.form label {
+  display: flex;
   justify-content: space-between;
 }
-.form>label:has(input:required)>span::after{
+.form label:has(input:required) > span::after {
   content: '*';
   color: red;
 }
-.form>label>input{
+.form label > input {
   width: 70%;
   border: 2px solid #ddd;
 }
-.form>label>input:focus{
+.form label > input:not([type="radio"]):focus {
   outline: 2px dotted pink;
   border: 2px solid transparent;
 }
 /* .form>label>input:valid{
   background-color: lime;
 } */
-.form>label>input:invalid{
+.form label > input:invalid {
   background-color: rgba(255, 0, 0, 0.338);
 }
-.form [type="submit"]{
+.form [type='submit'] {
   width: 70%;
   align-self: flex-end;
 }
