@@ -1,74 +1,26 @@
 *{
   box-sizing: border-box;
 }
+.form{
+  display: flex ;
+  flex-direction: column;
 
-.container{
-  border: 2px solid #aaa;
-  background-color: #eee;
+  max-width: 350px;
+  margin: 20px auto;
+
+  /* gap: 10px; */
 }
-
-.flex-parent{
-  /* width: 100%; */
-  /* min-height: 50vh; */
-  /* height: auto; */
-  display: flex;
-  flex-direction: row;
-  /* flex-wrap: wrap-reverse; */
-  /* flex-flow: column wrap; */
-  /*main axis*/
-  /* justify-content: space-between;  */
-  /*cross axis*/
-  align-items: flex-start; 
-  /* align-content: space-evenly; */
+.form>*:not(:last-child){
+  margin-bottom: 10px;
 }
-
-.item{
-  /* min-width: 200px; */
-  /* width: 18%; */
-  /* max-width: 300px; */
-  /* height: 50px; */
-  border: 2px solid #4ff;
-  background-color: #e50;
-  font-size: 2em;
-  text-align: center;
+.form>label{
+  display: flex ;
+  justify-content: space-between;
 }
-
-.flex-child{
-  /* flex-basis: 150px;
-  flex-grow: 0;
-  flex-shrink: 1; */
-  /* flex: flex-grow | flex-shrink | flex-basis */
-  flex: 0 1 150px;
-  /* margin: 20px; */
+.form>label>input{
+  width: 70%;
 }
-.order-1{
-  order: -1;
-  align-self: center;
-}
-.order1{
-  margin-top: auto;
-  margin-bottom: auto;
-  order: 1;
-}
-.order2{
-  order: 2;
-}
-
-.flex-grow{
-  flex-grow: 0;
-}
-.flex-shrink{
-  flex-shrink: 1;
-}
-
-
-
-
-
-.margin-right-auto{
-  margin-right: auto;
-}
-
-.margin-top-auto{
-  margin-top: auto;
+.form [type="submit"]{
+  width: 70%;
+  align-self: flex-end;
 }
