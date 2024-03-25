@@ -7,21 +7,37 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- <form class="form">
-      <input type="text" name="login" placeholder="login" />
-      <input type="password" name="password" placeholder="password" />
-      <input type="submit" value="send" />
-    </form> -->
-    <form class="form">
+    <form class="form" action="">
       <label>
         <span>login</span>
-        <input type="text" name="login" placeholder="only small letter" />
+        <input
+          type="text"
+          name="login"
+          placeholder="only small letter"
+          autofocus
+          required
+        />
       </label>
       <label>
         <span>password</span>
-        <input type="password" name="password" />
+        <input 
+        type="password" 
+        name="password" 
+        required 
+        />
       </label>
+      <label>
+        <span>email</span>
+        <input
+          type="email"
+          name="email"
+          required
+          pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
+        />
+      </label>
+      <p>* - required field</p>
       <input type="submit" value="send" />
     </form>
   </body>
 </html>
+

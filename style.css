@@ -17,8 +17,23 @@
   display: flex ;
   justify-content: space-between;
 }
+.form>label:has(input:required)>span::after{
+  content: '*';
+  color: red;
+}
 .form>label>input{
   width: 70%;
+  border: 2px solid #ddd;
+}
+.form>label>input:focus{
+  outline: 2px dotted pink;
+  border: 2px solid transparent;
+}
+/* .form>label>input:valid{
+  background-color: lime;
+} */
+.form>label>input:invalid{
+  background-color: rgba(255, 0, 0, 0.338);
 }
 .form [type="submit"]{
   width: 70%;
