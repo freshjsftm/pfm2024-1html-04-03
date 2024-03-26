@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+/* input::after{
+  content: '!!!';
+} */
 .form,
 .form fieldset {
   display: flex;
