@@ -1,6 +1,12 @@
 * {
   box-sizing: border-box;
 }
+textarea::-moz-placeholder {
+  font-family: Arial, sans-serif;
+}
+textarea::placeholder {
+  font-family: Arial, sans-serif;
+}
 /* input::after{
   content: '!!!';
 } */
@@ -29,7 +35,7 @@
   width: 70%;
   border: 2px solid #ddd;
 }
-.form label > input:not([type="radio"]):focus {
+.form label > input:not([type='radio']):focus {
   outline: 2px dotted pink;
   border: 2px solid transparent;
 }
@@ -42,4 +48,16 @@
 .form [type='submit'] {
   width: 70%;
   align-self: flex-end;
+}
+
+[type='radio'] {
+  display: none;
+}
+
+label:has([type='radio'])::after {
+  content: 'not';
+}
+
+label:has([type='radio']:checked)::after {
+  content: 'yes';
 }
