@@ -1,63 +1,102 @@
-* {
+:root{
+  /* variables */
+  font-family: sans-serif;
+  font-size: 14px;
+}
+*{
   box-sizing: border-box;
 }
-textarea::-moz-placeholder {
-  font-family: Arial, sans-serif;
+body{
+  margin: 0;
+  background-color: rgb(106, 136, 196);
 }
-textarea::placeholder {
-  font-family: Arial, sans-serif;
-}
-/* input::after{
-  content: '!!!';
-} */
-.form,
-.form fieldset {
-  display: flex;
-  flex-direction: column;
-}
-.form {
-  max-width: 350px;
-  margin: 20px auto;
+a{
+  color: inherit;
 }
 
-.form *:not(:last-child) {
-  margin-bottom: 10px;
+.form-section {
+  min-width: 350px;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
 }
-.form label {
+.form-wrapper {
+  padding: 1.5rem 15%;
+  background-color: #eee;
+  color: #555;
+}
+.form-title {
+  position: relative;
+
+  font-size: 2rem;
+  font-weight: normal;
+}
+.form-title>span{
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  z-index: 2;
+  padding: 0 1rem;
+  background-color: #eee;
+}
+.form-title::after{
+  content:'';
+  display: block;
+  width: 100%;
+  border-top: 2px solid #ccc;
+  position: absolute;
+  top: 40%;
+}
+.oneline {
+}
+.form-description {
+}
+/* variant 1 flex*/
+/* .form-register {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 70%;
+  margin: auto;
+} */
+
+/* variant 1 without flex*/
+.form-register{
+  width: 100%;
+  margin: auto;
+}
+.form-register>*{
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.form-register input{
+  padding: 0.5rem;
+}
+.form-register input::placeholder{
+  text-transform: capitalize;
+}
+.fullname {
   display: flex;
   justify-content: space-between;
 }
-.form label:has(input:required) > span::after {
-  content: '*';
-  color: red;
+.fullname>input{
+  width: 48%;
 }
-.form label > input {
-  width: 70%;
-  border: 2px solid #ddd;
+.form-register>label{
+  text-align: left;
 }
-.form label > input:not([type='radio']):focus {
-  outline: 2px dotted pink;
-  border: 2px solid transparent;
+.form-register>label>input{
+  transform: translateY(2px);
 }
-/* .form>label>input:valid{
-  background-color: lime;
-} */
-.form label > input:invalid {
-  background-color: rgba(255, 0, 0, 0.338);
+.btn-submit {
 }
-.form [type='submit'] {
-  width: 70%;
-  align-self: flex-end;
+.login-account {
+  color: #fff;
 }
-
-[type='radio'] {
-  display: none;
-}
-
-label:has([type='radio'])::after {
-  content: 'not';
-}
-
-label:has([type='radio']:checked)::after {
-  content: 'yes';
+.oneline {
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
 }

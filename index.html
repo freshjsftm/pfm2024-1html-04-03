@@ -7,122 +7,26 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form class="form" action="">
-      <fieldset>
-        <legend>choose language</legend>
-        <label for="lang">
-          <span>Language</span>
-          <datalist id="list-lang">
-            <option value="uk">
-            <option value="ug">qwe2</option>
-            <option value="lt">qwe3</option>
-            <option value="lv"></option>
-            <option value="liv"></option>
-            <option value="lia"></option>
-            <option value="en"></option>
-          </datalist>
-          <input type="text" name="lang" id="lang" list="list-lang" />
-        </label>
-      </fieldset>
-
-      <fieldset>
-        <legend>choose drink</legend>
-        <select name="drink" id="drink" size="3" multiple>
-          <option>choose drink</option>
-          <optgroup label="moning">
-            <option value="tea">tea</option>
-            <option value="juice">juice</option>
-            <option value="coffee">coffee</option>
-            <option value="milk">milk</option>
-          </optgroup>
-          <optgroup label="evening">
-            <option value="tea">tea</option>
-            <option value="juice">juice</option>
-            <option value="coffee">coffee</option>
-            <option value="milk">milk</option>
-          </optgroup>
-        </select>
-      </fieldset>
-
-      <fieldset>
-        <legend>write us</legend>
-        <textarea
-          name="message"
-          rows="12"
-          placeholder="your message"
-        ></textarea>
-      </fieldset>
-
-      <input
-        type="number"
-        name="number1"
-        min="0"
-        max="100"
-        step="10"
-        value="50"
-      />
-      <input type="range" name="range" min="0" max="100" step="10" value="50" />
-
-      <!-- method="POST" enctype="multipart/form-data" -->
-      <label for="file">choose file</label>
-      <input type="file" name="file" id="file" />
-
-      <fieldset>
-        <legend>self info</legend>
-        <label>
-          <span>login</span>
-          <input
-            type="text"
-            name="login"
-            placeholder="only small letter"
-            autofocus
-          />
-        </label>
-        <label>
-          <span>password</span>
-          <input type="password" name="password" />
-        </label>
-        <label>
-          <span>email</span>
-          <input type="email" name="email" autocomplete="email"/>
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>choose sex</legend>
-        <label>
-          <span>male</span>
-          <input type="radio" name="sex" value="male" checked />
-        </label>
-        <label>
-          <span>female</span>
-          <input type="radio" name="sex" value="female" />
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>choose language</legend>
-        <label>
-          <span>php</span>
-          <input type="checkbox" name="language" value="php" />
-        </label>
-        <label>
-          <span>js</span>
-          <input type="checkbox" name="language" value="js" checked />
-        </label>
-        <label>
-          <span>html</span>
-          <input type="checkbox" name="language" value="html" checked />
-        </label>
-        <label>
-          <span>css</span>
-          <input type="checkbox" name="language" value="css" checked />
-        </label>
-      </fieldset>
-
-      <p>* - required field</p>
-      <!-- <input type="reset" value="reset" /> -->
-      <input type="submit" value="send" />
-      <input type="button" value="name button" />
-      <button type="reset">name button reset</button>
-    </form>
+    <section class="form-section">
+      <div class="form-wrapper">
+        <h1 class="form-title"><span class="oneline">Register</span></h1>
+        <p class="form-description">Create your account. It's free and only takes a minute.</p>
+        <form action="" class="form-register">
+          <div class="fullname">
+            <input type="text" name="fname" placeholder="First name">
+            <input type="text" name="lname" placeholder="Last name">
+          </div>
+          <input type="email" name="email" placeholder="Email">
+          <input type="password" name="password" placeholder="Password">
+          <input type="password" name="confirmPassword" placeholder="Confirm password">
+          <label>
+            <input type="checkbox" name="accept">
+            <span >I accept the <a href="">Terms of use</a> & <a href="">Privacy Policy</a></span>
+          </label>
+          <button type="submit" class="btn-submit oneline">register now</button>
+        </form>
+      </div>
+      <p class="login-account">Already have an account? <a href="">Sign in</a></p>
+    </section>
   </body>
 </html>
