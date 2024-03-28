@@ -1,44 +1,55 @@
 :root {
   font-family: serif;
-  font-size: 14px;
+  font-size: 24px;
 }
 * {
   box-sizing: border-box;
 }
+body{
+  margin: 0;
+  color: aliceblue;
+}
+.wrapper {
+  height: 100vh;
+  background-color: red;
+  background-image:
+  url(./assets/icons/arrow-u-right-top-bold.svg), 
+  linear-gradient(45deg, rgba(47,9,4,0.38139005602240894) 7%, rgba(244,90,13,0.4682247899159664) 22%, rgba(192,244,255,0.26094187675070024) 50%, rgba(42,164,17,0.5522584033613445) 74%, rgba(129,199,255,0.5634628851540616) 86%),
+  url(./assets/images/sea.1.2496908.jpg);
+  background-repeat: repeat-y, no-repeat ,no-repeat;
+  background-size: 50px,100% ,cover;
+  background-position: right,top, center;
+  background-attachment: scroll ,fixed,fixed;
 
+  overflow-y: auto;
+}
+/* @keyframes anim{
+  from{  width: 150px;}
+  to{  width: 700px;}
+} */
+@keyframes anim {
+  0% {
+    width: 150px;
+  }
+  50% {
+    background-color: red;
+  }
+  51% {
+    background-color: blue;
+  }
+  100% {
+    width: 300px;
+  }
+}
 .inner {
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
   padding-top: 15px;
   margin-bottom: 5px;
   border-radius: 50%;
   background-color: pink;
-  /* transform: scale(1); */
-  /* transform: rotate(0.5turn); */
-  /* transition: margin-left 2s .2s, color 1s .5s, transform 1.5s .3s, background-color 2s .2s; */
-  transition: transform 1s .2s;
   text-align: center;
+  /* animation: anim 2s linear 0s infinite alternate both; */
 }
 .wrapper:hover .inner {
-  /* transform: scale(-1); */
-  /* width: 100%; */
-  /* margin-left: 90%;
-  background-color: blue;
-  color: white;
-  transform: rotate(3turn); */
-}
-.ease {
-  transition-timing-function: ease;
-}
-.linear {
-  transition-timing-function: linear;
-}
-.ease-in {
-  transition-timing-function: ease-in;
-}
-.ease-out {
-  transition-timing-function: ease-out;
-}
-.ease-in-out {
-  transition-timing-function: ease-in-out;
 }
