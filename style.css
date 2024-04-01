@@ -1,15 +1,66 @@
-@charset 'UTF-8';
-/* @import url(./assets/css/reset.css); */
-/* @import './assets/css/reset.css'; */
-/* @import './assets/css/fonts.css'; */
-/* @import './assets/css/print.css' print; */
-/* @import './assets/css/screen.css' screen; */
-/* @import './assets/css/common.css' all; */
-
 :root {
-  font-size: 24px;
+  font-size: 12px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 * {
   box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+:focus {
+    outline: thin dotted;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+img{
+  width: 100%;
+}
+a{
+  color: inherit;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@media screen and (min-width: 760px) {
+  :root{
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  :root{
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  :root{
+    font-size: 18px;
+  }
 }
