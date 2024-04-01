@@ -2,14 +2,14 @@
 /* @import url(./assets/css/reset.css); */
 /* @import './assets/css/reset.css'; */
 /* @import './assets/css/fonts.css'; */
+/* @import './assets/css/print.css' print; */
+/* @import './assets/css/screen.css' screen; */
+/* @import './assets/css/common.css' all; */
 
-:root{
+:root {
   font-size: 24px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-h1{
-  font-family: "Playfair Display", serif;
-  font-weight: 900;
-  font-style: italic;
+* {
+  box-sizing: border-box;
 }

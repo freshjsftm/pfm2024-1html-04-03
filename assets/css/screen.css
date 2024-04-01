@@ -1,0 +1,17 @@
+:root{
+  color: blue;
+}
+h1 {
+  color: blueviolet;
+  font-size: 2rem;
+}
+ul li {
+  background-color: rgb(247, 233, 209);
+  color: fuchsia;
+}
+blockquote{
+  background-color: fuchsia;
+}
+.print-logo{
+  display: none;
+}
